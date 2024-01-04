@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl" >
+<head>
+  <meta charset="UTF-8">
+  <title>ZegarkiDawida</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="zd/tlostrony.png">
+  <style>
+    .welcome-box {
+        border: 2px solid #333; /* Solidne obramowanie w ciemnym kolorze */
+        border-radius: 10px; /* Zaokrąglenie rogów */
+        background-color: #fff; /* Białe tło */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Delikatna cień */
+        padding: 20px; /* Wewnętrzny odstęp */
+        width: 300px; /* Szerokość */
+        opacity: 0; /* Domyślna przezroczystość na 0 */
+        animation: fadeIn 1s ease-in-out forwards; /* Animacja fadeIn */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Styl dla tekstu powitalnego */
+    .welcome-text {
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+        margin-bottom: 10px;
+    }
+</style>
+<!--<script>
+  let isFirstVisit = true;
+
+  String.prototype.welcomeMessage = function() {
+      if (isFirstVisit) {
+          alert("Witaj Na Mojej Stronie Poświęconej Zegarkom. Życzę ci udanego pobytu!");
+          isFirstVisit = false;
+      } else {
+          alert("Witaj Ponownie Na Mojej Stronie Poświęconej Zegarkom. Życzę ci udanego pobytu!");
+      }
+  }
+
+  // Wywołujemy funkcję
+  "".welcomeMessage();
+</script>-->
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+  <!--<script>
+    function okienko() {
+   var okienko = document.createElement("div");
+   okienko.style.backgroundColor = "white";
+   okienko.style.border = "1px solid black";
+   okienko.style.padding = "20px";
+   okienko.style.width = "400px";
+   okienko.style.position = "fixed";
+   okienko.style.top = "50%";
+   okienko.style.left = "50%";
+   okienko.style.transform = "translate(-50%, -50%)";
+   okienko.style.zIndex = "1000";
+   okienko.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
+  
+   var treść = "<p>Witaj na mojej stronie!</p>";
+   treść += '<button id="zamknijOkienko">Zamknij</button>';
+  
+   okienko.innerHTML = treść;
+  
+   document.body.appendChild(okienko);
+  
+   var przyciskZamknij = document.getElementById("zamknijOkienko");
+   przyciskZamknij.addEventListener("click", zamknijOkienko);
+  }
+  
+  function zamknijOkienko() {
+   var okienko = document.querySelector("div[style*='position: fixed']");
+   document.body.removeChild(okienko);
+  }
+  
+  okienko();
+    
+  </script>-->
+  <header>
+    <div class="company-logo">IcedSparrow</div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="game.html" class="nav-link">Game</a></li>
+        <!--<li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>-->
+        <li class="nav-item"><a href="Kontakt.html" class="nav-link">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+  <main>
+    <!-- HOME SECTION -->
+    <section class="container section-1">
+      <div class="slogan">
+        <h1 class="company-title">ZegarkiDawida</h1>
+        <h2 class="company-slogan">
+          Witaj na ZegarkiDawida - dedykowanym portalu dla pasjonatów zegarków, którzy cenią piękno i precyzję tych wyjątkowych czasomierzy.
+        </h2>
+      </div>
+      <div class="home-computer-container">
+        <img class="home-computer" src="zd/sublogo.png" alt="a computer in dark with shadow" class="home-img">
+      </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <section class="container section-2">
+      <!-- offer 1 -->
+      <div class="offer offer-1">
+        <img src="zd/sprite.png" alt="a computer in dark with with white shadow" class="offer-img offer-1-img">
+        <div class="offer-description offer-desc-1">
+          <h2 class="offer-title">Historia Ikony: Rolex GMT-Master II 126720VTNR "Sprite"</h2>
+          <p class="offer-hook">Odkryj fascynującą historię ikony zegarmistrzostwa, Rolex GMT-Master II 126720VTNR "Sprite", w moim e-booku...</p>
+          <div class="cart-btn" href="https://1ct.eu/EyRXl"><a href="https://1ct.eu/EyRXl">Buy</a></div>
+
+        </div>
+      </div>
+      <!-- offer 2 -->
+      <div class="offer offer-2">
+        <img src="zd/rolexlogo.png" alt="a opened computer" class="offer-img offer-2-img">
+        <div class="offer-description offer-desc-2">
+          <h2 class="offer-title">Ebook o histori Rolexa</h2>
+          <p class="offer-hook"><b>Wrótce Dostępny</b></p>
+          <div class="cart-btn" href=""><a href="">Buy</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="container section-3">
+      <!-- product - 1 -->
+      <div class="product product-1">
+        <img src="zd/audemars26240orblog.jpg" alt="computer to sell" class="product-img">
+        <a href="blogi/audemarspiguet26240or.html" class="product_add_cart">Read More</a>
+      </div>
+      <!-- product - 2 -->
+      <div class="product product-2">
+        <img src="zd/rolex2.png" alt="computer to sell" class="product-img">
+        <a href="blogi/rspriteblog.html" class="product_add_cart">Read More</a>
+      </div>
+      <!-- product - 3 -->
+      <div class="product product-3">
+        <img src="zd/richard3.png" alt="computer to sell" class="product-img">
+        <a href="#" class="product_add_cart">Read More</a>
+      </div>
+      <!-- product - 4 -->
+      <div class="product product-4">
+        <img src="zd/patek4.png" alt="computer to sell" class="product-img">
+        <a href="blogi/patekaquablog.html" class="product_add_cart">Read More</a>
+      </div>
+      <!-- product - 5 -->
+      <div class="product product-4">
+        <img src="zd/vacherone5.png" alt="computer to sell" class="product-img">
+        <a href="blogi/vacheronemoon.html" class="product_add_cart">Read More</a>
+      </div>
+      <!-- product - 6 -->
+      <div class="product product-4">
+        <img src="zd/ap6.png" alt="computer to sell" class="product-img">
+        <a href="blogi/ap5510st.html" class="product_add_cart">Read More</a>
+      </div>
+    </section>
+
+    <!-- SPONSOR SECTION -->
+    <section class="container section-4">
+      <!-- SPONSOR group 1 -->
+      <div class="sponsor sponsor-1"><img src="zd/rolexlogo.png" alt=""></div>
+      <div class="sponsor sponsor-2"><img src="zd/aplogo.png" alt=""></div>
+
+      <!-- SPONSOR group 2 -->
+      <div class="sponsor sponsor-3"><img src="zd/pateklogo.png" alt=""></div>
+      <div class="richardmille"><img src="zd/richardlogo.png" alt=""></div>
+    </section>
+
+        <!-- PRODUCT SECTION -->
+        <!--<section class="container section-3">-->
+          <!-- product - 1 -->
+          <!--<div class="product product-1">
+            <img src="zd/ap1.png" alt="computer to sell" class="product-img">
+            <span class="product_add_cart">ADD TO CART</span>
+          </div>-->
+          <!-- product - 2 -->
+          <!--<div class="product product-2">
+            <img src="zd/rolex2.png" alt="computer to sell" class="product-img">
+            <span class="product_add_cart">ADD TO CART</span>
+          </div>-->
+          <!-- product - 3 -->
+          <!--<div class="product product-3">
+            <img src="zd/richard3.png" alt="computer to sell" class="product-img">
+            <span class="product_add_cart">ADD TO CART</span>
+          </div>-->
+          <!-- product - 4 -->
+          <!--<div class="product product-4">
+            <img src="zd/patek4.png" alt="computer to sell" class="product-img">
+            <span class="product_add_cart">ADD TO CART</span>
+          </div>-->
+          <!-- product - 5 -->
+          <!--<div class="product product-4">
+            <img src="zd/vacherone5.png" alt="computer to sell" class="product-img">
+            <span class="product_add_cart">ADD TO CART</span>
+          </div>-->
+          <!-- product - 6 -->
+          <!--<div class="product product-4">
+            <img src="zd/ap6.png" alt="computer to sell" class="product-img">
+            <span class="product_add_cart">ADD TO CART</span>
+          </div>
+        </section>-->
+
+<!-- SUBSCRIBE SECTION-->
+<section class="container section-5">
+    <div class="container d-flex justify-content-center ">
+      <form action="https://formspree.io/f/mgejdnav" method="POST" class="form">
+        <span class="title">Subscribe to our newsletter</span>
+        <p class="description">Subscribe to this weekly news letter so you don’t miss out on the new tech topics and on free code snippets.</p>
+        <div>
+          <input placeholder="Enter your email" type="email" name="email">
+          <button type="submit">Subscribe</button>
+        </div>
+        </form>
+    </div>
+    <style>
+
+.form {
+background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+padding: 20px;
+border-radius: 10px;
+max-width: 450px;
+}
+.title {
+font-size: 2rem;
+line-height: 2rem;
+font-weight: 700;
+letter-spacing: -0.025em;
+color: #fff;
+}
+.description {
+font-size: 1rem;
+margin-top: 1rem;
+color: rgb(209 213 219);
+}
+.form div {
+display: flex;
+margin-top: 1rem;
+column-gap: 0.5rem;
+}
+.form div input {
+outline: none;
+line-height: 1.5rem;
+font-size: 0.875rem;
+color: rgb(255 255 255 );
+padding: 0.5rem 0.875rem;
+background-color: rgb(255 255 255 / 0.05);
+border: 1px solid rgba(253, 253, 253, 0.363);
+border-radius: 0.375rem;
+flex: 1 1 auto;
+}
+.form div input::placeholder {
+color: rgb(216, 212, 212);
+}
+.form div input:focus {
+border: 1px solid rgb(99 102 241);
+}
+.form div button {
+color: #fff;
+font-weight: 600;
+line-height: 1.25rem;
+padding: 0.625rem 0.875rem;
+background-color: rgb(75, 77, 219);
+border-radius: 0.375rem;
+border: none;
+outline: none;
+}
+
+    </style>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container top-footer">
+      <!-- footer item 1 -->
+      <div class="footer-item">
+        <h2 class="footer-title">ADRES</h2>
+        <div class="footer-items">
+          <h3>Email: <a href="mailto:watchsparrows40@gmail.com" class="contact-info">watchsparrow40@gmail.com</a></h3>
+          <h3>Miejscowość: Kępno</h3>
+          <h3>Telefon: 510-547-307</h3>
+          <h3><a href="https://www.google.com/maps/place/Kępno/@51.285455,17.9870035,14z/data=!3m1!4b1!4m6!3m5!1s0x47100ac8817e7485:0xed30bc00683b7582!8m2!3d51.2781356!4d17.9890591!16zL20vMDNmZ3J5?hl=pl&entry=ttu" target="_blank">Lokalizacja</a></h3>
+        </div>
+      </div>
+      <!-- footer item 2 -->
+      <div class="footer-item">
+        <h2 class="footer-title">USŁUGI</h2>
+        <div class="footer-items">
+          <h3>Wycena Zegarka</h3>
+          <h3>Sprowadzenie</h3>
+          <h3>Legit Check</h3>
+          <!-- Dodaj nowe usługi poniżej -->
+          <h3>Naprawa Zegarków</h3>
+          <h3>Skup Zegarków</h3>
+        </div>
+      </div>
+      <!-- footer item 3 -->
+      <div class="footer-item">
+        <h2 class="footer-title">DOSTAWCY</h2>
+        <div class="footer-items">
+          <h3>Nasi Zaufani Dostawcy:</h3>
+          <h3>1. Nazwa Dostawcy 1</h3>
+          <h3>2. Nazwa Dostawcy 2</h3>
+          <!-- Dodaj więcej dostawców poniżej -->
+          <h3>3. Nazwa Dostawcy 3</h3>
+        </div>
+      </div>
+      <!-- footer item 4 -->
+      <div class="footer-item">
+        <h2 class="footer-title">INWESTYCJA</h2>
+        <div class="footer-items">
+          <h3>E-Book o inwestowaniu w zegarki.</h3>
+          <h3>Czy inwestowanie w zegarki jest dobre?</h3>
+          <h3>Zegarki nie warte swojej kwoty.</h3>
+          <h3>Zegarki Godne Polecenia</h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container end-footer">
+      <div class="copyright">copyright © 2023 -ZegarkiDawida  • <b>Dawid Wróbel</b></div>
+      <a class="designer" href="#">Dawid Wróbel</a>
+    </div>
+  </footer>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

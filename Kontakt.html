@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Contact us Page Design</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(zd/Projekt\ bez\ nazwy.mp4);
+}
+.contact 
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #222;
+}
+.contact .content 
+{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h2 
+{
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+}
+.contact .content p 
+{
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.container 
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 30px;
+}
+.container .contactInfo 
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box 
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	cursor: pointer;
+}
+.container .contactInfo .box .icon 
+{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.75em;
+	transition: 0.5s;
+}
+.container .contactInfo .box:hover .icon 
+{
+	background: #00bcd4;
+	color: #fff;
+}
+.container .contactInfo .box .text 
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3 
+{
+	font-weight: 500;
+	color: #00bcd4;
+}
+.container .contactInfo .txt
+{
+	color: #fff;
+	margin-top: 50px;
+	font-weight: 500;
+	padding-left: 10px;
+	border-left: 50px solid #e91e63;
+	line-height: 1em;
+}
+.sci 
+{
+	position: relative;
+	display: flex;
+	gap: 30px;
+	margin: 20px 0;
+}
+.sci li 
+{
+	list-style: none;
+}
+.sci li a 
+{
+	color: #fff;
+	font-size: 2em;
+	transition: 0.5s;
+}
+.sci li a:hover 
+{
+	color: #00bcd4;
+}
+
+
+.container .contactForm
+{
+	position: relative;
+	width: 40%;
+	background: #fff;
+	min-height: 100px;
+	padding: 60px;
+} 
+.container .contactForm h2 
+{
+	font-size: 2em;
+	color: #333;
+	font-weight: 500;
+}
+.container .contactForm .inputBox 
+{
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
+.container .contactForm .inputBox input, 
+.container .contactForm .inputBox textarea 
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 1.1em;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.container .contactForm .inputBox span 
+{
+	position: absolute;
+	left: 0;
+	pointer-events: none;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 1.1em;
+	color: #666;
+	transition: 0.5s;
+}
+.container .contactForm .inputBox input:focus ~ span, 
+.container .contactForm .inputBox textarea:focus ~ span,
+.container .contactForm .inputBox input:valid ~ span, 
+.container .contactForm .inputBox textarea:valid ~ span 
+{
+	color: #e91e63;
+	font-size: 0.9em;
+	transform: translateY(-20px);
+}
+.container .contactForm .inputBox input[type="submit"]
+{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+/* lets make it responsive */
+@media (max-width: 991px)
+{
+	.contact
+	{
+		padding: 50px;
+	}
+	.container
+	{
+		flex-direction: column;
+	}
+	.container .contactInfo,
+	.container .contactForm
+	{
+		width: 100%;
+	}
+	.container .contactForm
+	{
+		padding: 50px 30px;
+	}
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="company-logo">IcedSparrow</div>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="game.html" class="nav-link">Game</a></li>
+            <!--<li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>-->
+            <li class="nav-item"><a href="Kontakt.html" class="nav-link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="bx bx-menu"></i>
+          <i class="bx bx-x"></i>
+        </div>
+      </header>
+
+	<section class="contact">
+		<div class="content">
+			<h2>Kontakt Do Mnie</h2>
+			<p>Masz jakieś pytanie? Prosimy o wiadomość
+				Skontaktuj się ze mną i daj mi znać, jak mogę pomóc. Wypełnij formularz, a skontaktuję się z Tobą tak szybko, jak to możliwe.
+			</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>
+                            <a href="https://www.google.com/maps/place/Kępno/@51.285455,17.9870035,14z/data=!3m1!4b1!4m6!3m5!1s0x47100ac8817e7485:0xed30bc00683b7582!8m2!3d51.2781356!4d17.9890591!16zL20vMDNmZ3J5?hl=pl&entry=ttu" target="_blank">Lokalizacja</a>
+                            <br>Kępno<br>Poland</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>+48 510-547-307</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>watchsparrow40@gmail.com</p>
+					</div>
+				</div>
+				<h2 class="txt">Connect with us</h2>
+				<ul class="sci">
+					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+				</ul>
+			</div>
+
+			<div class="contactForm">
+      <form action="https://formspree.io/f/mgejdnav" method="POST" class="form">
+                <h2>Wyślij Wiadomość</h2>
+	
+             <!--   <h2>Send Message</h2>  -->
+
+                    <div class="inputBox">
+        
+                      <input type="text" name="name" id="name" required placeholder="Jan Kowalski" class="input-field">
+        
+        
+                    </div>
+
+                    <div class="inputBox">
+
+            
+                        <div class="inputBox">
+            
+                          <input type="email" name="email" id="email" required placeholder="example@gmail.com"
+                            class="input-field">
+            
+            
+                        </div>
+            
+                      </div>
+
+
+                      <div class="inputBox">
+
+            
+                        <div class="inputBox">
+                            
+                          <textarea name="message" id="message" required placeholder="Write message..."
+                            class="input-field"></textarea>
+            
+            
+                        </div>
+            
+                      </div>
+            
+
+					<div class="inputBox">
+						<button type="submit" class="btn btn-primary">Send</button>
+                        <style>
+                            button{
+                                
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+                        
+                        </style>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</section>
+
+            <div class="container end-footer">
+      <div class="copyright">copyright © 2023 -ZegarkiDawida  • <b>Dawid Wróbel</b></div>
+      <a class="designer" href="#">Dawid Wróbel</a>
+      <style>
+        .copyright{
+            color: #ffffff;
+        }
+        .designer{
+            color: white;
+        }
+      </style>
+    </div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
