@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Szachowe Strategie: Graj i Zwyciężaj</title>	
+		<link href="styles.css" rel="stylesheet" type="text/css">	
+		<link rel="icon" href="zd/tlostrony.png">
+		
+		<link rel="stylesheet" href="style2.css">
+		<link rel="icon" href="images/tlostrony.png">
+
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+	</head>
+	<body>
+		<header>
+			<div class="company-logo">IcedSparrow</div>
+			<nav class="navbar">
+			  <ul class="nav-items">
+				<li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+				<li class="nav-item"><a href="/blog.html" class="nav-link">Blog</a></li>
+				<li class="nav-item"><a href="/game.html" class="nav-link">Game</a></li>
+				<link rel="icon" href="zd/tlostrony.png">
+
+				<!--<li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>-->
+				<li class="nav-item"><a href="/Kontakt.html" class="nav-link">Kontakt</a></li>
+			  </ul>
+			</nav>
+			<div class="menu-toggle">
+			  <i class="bx bx-menu"></i>
+			  <i class="bx bx-x"></i>
+			</div>
+		  </header>
+		<main>
+			<h1 class="nag">Szachowe Strategie: Graj i Zwyciężaj</h1>			
+		<main>	
+		
+		<div id="Board">
+		</div>
+		<div id="EngineOutput" class="think"><h3 class="think1">Thinking Time: </h3><br/>
+			<select id="ThinkTimeChoice" >
+			<option value="1">1s</option>
+			  <option value="2">2s</option>
+			  <option value="4">4s</option>
+			  <option value="6">6s</option>
+			  <option value="8">8s</option>
+			  <option value="10">10s</option>
+			</select><br/><br/><br/>
+			<span id="BestOut">BestMove:</span><br/>
+			<span id="DepthOut">Depth:</span><br/>
+			<span id="ScoreOut">Score:</span><br/>
+			<span id="NodesOut">Nodes:</span><br/>
+			<span id="OrderingOut">Ordering:</span><br/>
+			<span id="TimeOut">Time:</span><br/><br/>
+			<button type="button" id="SearchButton">Move Now</button><br/>
+			<button type="button" id="NewGameButton">New Game</button><br/>
+			<button type="button" id="FlipButton">Flip Board</button><br/><br/>
+			<button type="button" id="TakeButton">Take Back</button><br/><br/><br/>
+			<span id="GameStatus"></span>
+		</div>
+		
+		<script src="js/jquery-1.10.1.min.js"></script>		
+		<script src="js/defs.js"></script>	
+		<script src="js/io.js"></script>	
+		<script src="js/board.js"></script>	
+		<script src="js/movegen.js"></script>	
+		<script src="js/makemove.js"></script>		
+		<script src="js/evaluate.js"></script>	
+		<script src="js/pvtable.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/perft.js"></script>
+		<script src="js/gui.js"></script>
+		<script src="js/main.js"></script>
+		<footer><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+			<div class="container end-footer">
+				<div class="copyright">copyright © 2023 -ZegarkiDawida  • <b>Dawid Wróbel</b></div>
+				<a class="designer" href="#">Dawid Wróbel</a>
+			</div>
+		</footer>
+	</body>
+</html>
